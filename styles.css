@@ -1,0 +1,47 @@
+
+
+#board {
+    padding: 3em;
+    text-align: center;
+    
+}
+
+.row > div {
+    float:left;
+    height: 100px;
+    width: 100px;
+}
+
+.row::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.row {
+    
+    margin:0 auto ;
+    
+    width: 302px;
+}
+
+
+.top {
+    border-bottom: 1px black solid;
+}
+
+.bottom {
+    border-top: 1px rgb(0, 0, 0) solid;
+}
+
+.left {
+    border-right: 1px rgb(0, 0, 0) solid;
+}
+
+.right {
+    border-left: 1px rgb(0, 0, 0) solid;
+}
+
+.center {
+
+}
