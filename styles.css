@@ -1,47 +1,57 @@
 
 
+body {
+    background-color: black;
+
+}
+
 #board {
     padding: 3em;
     text-align: center;
-    
+    color: white;
+
 }
 
 .row > div {
     float:left;
     height: 100px;
     width: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 6em;
+    color: cyan;
+
 }
 
-.row::after {
-    clear: both;
-    display: table;
-    content: "";
-}
 
 .row {
     
-    margin:0 auto ;
-    
+    clear: both;
+    margin: 0 auto ;
     width: 302px;
 }
 
 
 .top {
-    border-bottom: 1px black solid;
+    border-bottom: 1px rgb(255, 255, 255) solid;
 }
 
 .bottom {
-    border-top: 1px rgb(0, 0, 0) solid;
+    border-top: 1px rgb(255, 255, 255) solid;
 }
 
 .left {
-    border-right: 1px rgb(0, 0, 0) solid;
+    border-right: 1px rgb(255, 255, 255) solid;
 }
 
 .right {
-    border-left: 1px rgb(0, 0, 0) solid;
+    border-left: 1px rgb(255, 255, 255) solid;
 }
 
-.center {
-
+#turn {
+    text-align: center;
+    width: 8em;
+    margin: auto;
+    font-family:monospace;
+    color: rgb(122, 255, 155);
+    font-size: 2em;
 }
