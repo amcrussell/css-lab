@@ -17,12 +17,8 @@ var board = [["top left", "unclamed"], ["top middle", "unclamed"], ["top right",
 ["bottom left", "unclamed"], ["bottom middle", "unclamed"], ["bottom right", "unclamed"]
 ]
 
-
-
 for (let c = 0; c < cells.length; c++) 
     cells[c].addEventListener("click", cellClicked);
-
-
 
 function cellClicked(ev) {
 
@@ -128,7 +124,9 @@ function win(player) {
 
     }
 
-    alert(player + "wins!");
+    setTimeout(function() { alert(player + " wins!"); }, 1);
+
+    //found this online to fix the symbol showing up after the alert
 }
 
 function reset() {
@@ -165,5 +163,5 @@ function blackCat() {
 
     }
 
-    win(": (  no one ");
+    win(": (  no one");
 }
